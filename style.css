@@ -1,0 +1,141 @@
+* {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   scroll-behavior: smooth;
+
+}
+
+body {
+   background: rgb(9, 9, 121);
+   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.list {
+   background-color: white;
+   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+   width: 600px;
+   border: 2px solid #f9f9f9;
+   border-radius: 10px;
+   padding: 20px;
+   text-align: left;
+   margin: 80px auto;
+}
+
+.task {
+   padding: 10px;
+}
+
+.address {
+   display: flex;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+h2 {
+   color: #002765;
+   font-weight: bolder;
+   width: fit-content;
+}
+
+.address img {
+   width: 35px;
+   margin-left: 5px;
+}
+
+.list .input {
+   position: relative;
+}
+
+.list .input input[type="text"] {
+   padding: 15px 15px 15px 30px;
+   width: 100%;
+   background-color: #f3f3f3;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+}
+
+.list .input input[type="button"] {
+   position: absolute;
+   right: 0;
+   width: 25%;
+   height: 100%;
+   top: 50%;
+   transform: translateY(-50%);
+   border-radius: 10px;
+   border: none;
+   background-color: rgb(11, 155, 155);
+   color: white;
+   font-size: 13px;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.list .input input[type="button"]:hover {
+   background-color: rgb(9, 109, 109);
+}
+
+.list ul {
+   list-style-type: none;
+   padding: 15px;
+}
+
+.list ul li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   font-size: 15px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   position: relative;
+   border-radius: 10px;
+   background-color: rgba(128, 128, 128, 0.158);
+}
+.list ul li input {
+   padding: 5px;
+   font-size: 11px;
+   border: none;
+   cursor: pointer;
+   background-color: transparent;
+}
+.list ul li #btn1 {
+   color: rgb(0, 255, 13);
+}
+.list ul li #btn2 {
+   color: rgb(187, 39, 39);
+}
+.list ul li #btn1:hover {
+   color: rgb(48, 209, 56);
+}
+.list ul li #btn2:hover {
+   color: rgb(255, 0, 0);
+}
+
+.completed {
+   margin-bottom: 30px;
+   padding: 20px;
+   background-color: rgba(11, 230, 22, 0.315);
+   border-radius: 10px;
+}
+
+.uncompleted {
+   margin-bottom: 30px;
+   padding: 20px;
+   background-color: rgba(255, 0, 0, 0.315);
+   border-radius: 10px;
+}
+
+.completed ul li,
+.uncompleted ul li {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   font-size: 15px;
+   font-weight: bold;
+   border-radius: 10px;
+   background-color: rgba(128, 128, 128, 0.158);
+}
