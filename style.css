@@ -8,13 +8,13 @@
 }
 
 body {
-   background: rgb(9, 9, 121);
-   background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+   background-image: linear-gradient(135deg, rgb(164, 71, 123) 0%, rgb(164, 71, 123) 33%, rgb(184, 117, 109) 33%, rgb(184, 117, 109) 37%, rgb(204, 163, 95) 37%, rgb(204, 163, 95) 51%, rgb(223, 209, 80) 51%, rgb(223, 209, 80) 58%, rgb(243, 255, 66) 58%, rgb(243, 255, 66) 100%), linear-gradient(45deg, rgb(164, 71, 123) 0%, rgb(164, 71, 123) 33%, rgb(184, 117, 109) 33%, rgb(184, 117, 109) 37%, rgb(204, 163, 95) 37%, rgb(204, 163, 95) 51%, rgb(223, 209, 80) 51%, rgb(223, 209, 80) 58%, rgb(243, 255, 66) 58%, rgb(243, 255, 66) 100%), linear-gradient(90deg, rgb(164, 71, 123) 0%, rgb(164, 71, 123) 33%, rgb(184, 117, 109) 33%, rgb(184, 117, 109) 37%, rgb(204, 163, 95) 37%, rgb(204, 163, 95) 51%, rgb(223, 209, 80) 51%, rgb(223, 209, 80) 58%, rgb(243, 255, 66) 58%, rgb(243, 255, 66) 100%), linear-gradient(90deg, rgb(218, 192, 127), rgb(200, 47, 40));
+   background-blend-mode: overlay, overlay, overlay, overlay;
 }
 
 
 .list {
-   background-color: white;
+   background-color: transparent;
    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
    width: 600px;
    border: 2px solid #f9f9f9;
@@ -95,6 +95,7 @@ h2 {
    border-radius: 10px;
    background-color: rgba(128, 128, 128, 0.158);
 }
+
 .list ul li input {
    padding: 5px;
    font-size: 11px;
@@ -102,15 +103,19 @@ h2 {
    cursor: pointer;
    background-color: transparent;
 }
+
 .list ul li #btn1 {
    color: rgb(0, 255, 13);
 }
+
 .list ul li #btn2 {
    color: rgb(187, 39, 39);
 }
+
 .list ul li #btn1:hover {
    color: rgb(48, 209, 56);
 }
+
 .list ul li #btn2:hover {
    color: rgb(255, 0, 0);
 }
