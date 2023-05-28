@@ -54,7 +54,7 @@ function add() {
          saveTasks();
       }
       button2.onclick = function () {
-         div.removeChild(button2);
+         li.removeChild(div);
          list2.appendChild(li);
          saveTasks();
       }
