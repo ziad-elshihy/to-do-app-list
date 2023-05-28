@@ -12,18 +12,59 @@ body {
    background-blend-mode: overlay, overlay, overlay, overlay;
 }
 
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
+/* Small */
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+.creator {
+   text-align: center;
+   padding: 50px 0;
+   font-weight: 800;
+   text-decoration: underline;
+}
+@media (max-width: 767px) {
+   .creator {
+      font-size: 25px;
+   }
+}
 .list {
    background-color: transparent;
    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-   width: 600px;
+   max-width: 600px;
    border: 2px solid #f9f9f9;
    border-radius: 10px;
    padding: 20px;
    text-align: left;
-   margin: 80px auto;
+   margin: 0 auto;
 }
-
+@media (max-width: 767px) {
+   .list {
+      max-width: 400px;
+   }
+}
 .task {
    padding: 10px;
 }
@@ -33,7 +74,12 @@ body {
    align-items: center;
    margin-bottom: 15px;
 }
-
+@media (max-width: 767px) {
+   .address {
+      justify-content: center;
+      padding-bottom: 40px;
+   }
+}
 h2 {
    color: #002765;
    font-weight: bolder;
@@ -106,10 +152,14 @@ h2 {
 
 .list ul li #btn1 {
    color: rgb(0, 255, 13);
+   font-size: 25px;
+   padding: 5px;
 }
 
 .list ul li #btn2 {
    color: rgb(187, 39, 39);
+   font-size: 25px;
+   padding: 5px;
 }
 
 .list ul li #btn1:hover {

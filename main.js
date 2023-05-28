@@ -21,11 +21,11 @@ function add() {
       let div = document.createElement("div");
       let button1 = document.createElement("input");
          button1.type = "button";
-         button1.value = "Completed";
+         button1.value = "\u2713";
          button1.id = "btn1";
       let button2 = document.createElement("input");
          button2.type = "button";
-         button2.value = "UnCompleted";
+         button2.value = "\u2717";
          button2.id = "btn2";
       div.appendChild(button1);
       div.appendChild(button2);
